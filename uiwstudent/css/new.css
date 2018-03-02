@@ -1,0 +1,220 @@
+body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  h5{font-size:18px}
+  h6{font-size:16px}
+  .container { 
+      padding: 60px 100px;
+      background: yellow;
+  }
+  .main{
+  	  padding: 70px 110px;
+      background: aqua;
+      
+  }
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+    .main{
+      padding: 40px 60px;
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-grey {
+  	  background-color: #F6F6F6;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: white;
+  }
+  
+  /* JS sticks navbar in place at the top when scrolling */
+  .affix {
+      top: 0;
+      width: 100%;
+      z-index: 100 !important;
+      opacity: 0.9;
+
+  }
+/*  .affix a {
+      color: green !important;
+      padding: 15px !important; /*affects scroll down sticky nav 
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+  }
+  .affix-top a {
+      padding: 20px !important; */
+  }
+  .affix + .container-fluid {
+      padding-top: 20px;
+  }
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      background: linear-gradient(to bottom, #660000 0%, #ff0000 100%); /*#BA141E;  UIW red */
+      border: 0;
+      border-radius: 0;
+      box-shadow: 5px 0px 40px rgba(0,0,0, .9); 
+      margin-bottom: 0;
+      z-index: 100 !important;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: white !important;
+      
+  }
+  .navbar-nav li a:hover {
+      color: black !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #cc0000 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  /* submenu */
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -6px;
+      margin-left: -1px;
+      -webkit-border-radius: 0 6px 6px 6px;
+      -moz-border-radius: 0 6px 6px;
+      border-radius: 0 6px 6px 6px;
+  } 
+  .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+  }
+	
+	.dropdown-submenu>a:after {
+	    display: block;
+	    content: " ";
+	    float: right;
+	    width: 0;
+	    height: 0;
+	    border-color: transparent;
+	    border-style: solid;
+	    border-width: 5px 0 5px 5px;
+	    border-left-color: #ccc;
+	    margin-top: 5px;
+	    margin-right: -10px;
+	}
+  
+  #overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 101 !important;
+  }
+  /* -----------------------------Side Nav---------------------------- */
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 650px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    /* -----------------------------footer--------------------------------- */
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
